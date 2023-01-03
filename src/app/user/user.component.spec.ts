@@ -5,6 +5,8 @@ import { UserComponent } from "./user.component";
 import { UserService } from "./user.service";
 import { DataService } from "../shared/data.service";
 
+// this is dependency test, not isolated test, that's why we use angular dedicated testing syntax here and methods
+// those are angular testing packages (but there are also basic unit testing packages, isolated: see reverse.pipe.ts)
 describe("Component: User", () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
